@@ -1,0 +1,12 @@
+numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+uniques = [] # create an empty list, when we print uniques, we will put the numbers into uniques
+
+for number in numbers:   # take out the numbers from list of numbers
+    if number not in uniques:   #if the number in the list of numbers is not in the list of uniques, then 
+        uniques.append(number)  # then use append() to add number into the list of uniques, and then loop to determine if if the number in the list of numbers is not in the list of uniques again
+
+print(uniques)
+
+
+# 1. first [2] from list numbers --> list uniques --> [2] inside unique now --> loop again
+# 2. second [2] from list numbers --> first [2] inside the list of uniques --> do nothing, skip --> loop again

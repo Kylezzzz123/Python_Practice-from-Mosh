@@ -1,0 +1,29 @@
+numbers = [5, 2, 1, 5, 7, 4]
+numbers.append(20)
+
+print(numbers)
+numbers.insert(0,10)
+
+print(numbers)
+numbers.remove(10)
+
+print(numbers)
+numbers.pop()   #remove the last item in the list
+print(numbers)
+numbers.index(5)   # show the position, output: 0 
+
+print(numbers)
+print(50 in numbers)  # output: False
+print(numbers.count(5)) #count how many numbers is 5 in the list
+
+numbers.sort()  # sort a list
+print(numbers)  # output: 1,2,4,5,5,7
+numbers.reverse() # reverse the list
+print(numbers)  #output: 7, 5, 5, 4, 2, 1
+
+number2 = numbers.copy() # number2 copys the original list of number, won't affected by anything
+numbers.append(99) # won't affect number2
+print(number2) # output: 7,5,5,4,2,1
+
+numbers.clear()
+print(numbers)
