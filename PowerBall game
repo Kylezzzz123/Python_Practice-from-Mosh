@@ -1,0 +1,35 @@
+import random 
+while True:
+    num_list = list(int(num) for num in input("Enter the list items separated by space, any numbers after 6 do not count!: ").strip().split())[:6]
+    if len(num_list) < 6:
+        print("Your count of numbers are less than 6, please enter your 6 numbers!")
+        pass
+    for number in num_list:
+        if number < 0 or number > 64:
+            print("Pleae enter numbser between 1 to 64")
+            pass 
+    if len(num_list) == 6:
+        print("User list: ", num_list)
+        list = []
+        for i in range (6):
+            start = input("Start: (y) or (n): ")
+            if start == "n":
+                break
+            if start == "y":
+                roll = random.randint(1,64)
+                if roll not in list:
+                 list.append(roll)
+                 print(list)
+            
+        if roll == num_list:
+            print("Your numbers: =", num_list, " = ", list, "= PowerBall numbers" )
+            print("You Win!")
+        if roll != num_list:
+            print("Your numbers =", num_list, " ❌ ", list, "= PowerBall numbers" )
+            print("You loss! See you next time!")
+
+            break
+            
+            
+    
+   
