@@ -14,7 +14,7 @@ while True:
         for i in range (6):
             start = input("Start: (y) or (n): ")
             if start == "n":
-                break
+                exit()
             if start == "y":
                 roll = random.randint(1,64)
                 if roll not in list:
